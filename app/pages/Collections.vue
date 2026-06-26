@@ -98,11 +98,7 @@
 
       </div>
     </section>
-
-    <!-- FOOTER -->
-    <footer class="py-10 text-center text-white/50 border-t border-white/10 text-sm">
-      © 2026 NOIR PERFUME. All rights reserved.
-    </footer>
+ 
 
   </div>
-</template>1
+</template>
