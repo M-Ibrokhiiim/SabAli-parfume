@@ -1,6 +1,6 @@
 <template>
   <div class="bg-black text-white">
-
+ 
     <!-- HERO -->
     <section class="h-[40vh] flex items-center justify-center relative">
 
@@ -15,7 +15,7 @@
       <!-- content -->
       <div class="relative text-center px-6">
         <h2 class="text-5xl md:text-7xl font-light tracking-[10px]">
-         SAB ALI 
+         Collection
         </h2>
 
         <p class="mt-6 text-white/70 max-w-xl mx-auto">
@@ -105,4 +105,4 @@
     </footer>
 
   </div>
-</template>
+</template>1

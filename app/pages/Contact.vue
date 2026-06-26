@@ -15,7 +15,7 @@
       <!-- content -->
       <div class="relative text-center px-6">
         <h2 class="text-5xl md:text-7xl font-light tracking-[10px]">
-         SAB ALI 
+         Contact
         </h2>
 
         <p class="mt-6 text-white/70 max-w-xl mx-auto">
