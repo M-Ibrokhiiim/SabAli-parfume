@@ -1,26 +1,23 @@
 <template>
   <div class="bg-black text-white">
-
     <!-- HERO -->
-    <section class="h-[40vh] flex items-center justify-center relative">
+    <section class="h-[65vh] flex items-center justify-center relative">
 
       <!-- background -->
-      <div class="absolute inset-0">
+      <div class="absolute inset-2 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1594035910387-fea47794261f"
-          class="w-full h-full object-cover opacity-40"
+          :src="banner"
+          class="w-full h-full object-cover mt-[] ml-[-70px]"
         />
       </div>
 
       <!-- content -->
-      <div class="relative text-center px-6">
-        <h2 class="text-5xl md:text-7xl font-light tracking-[10px]">
-         SAB ALI 
+      <div class="relative text-center px-6 ml-[90px]">
+        <h2 class="welcome text-5xl md:text-7xl font-light tracking-[10px]">
+         SABALI 
         </h2>
 
-        <p class="mt-6 text-white/70 max-w-xl mx-auto">
-          Discover exclusive fragrances crafted for timeless elegance and modern identity.
-        </p>
+       
 
         <button class="mt-10 px-8 py-3 border border-white/40 hover:bg-white hover:text-black transition">
           Explore Collection
@@ -102,3 +99,12 @@
 
   </div>
 </template>
+<script setup>
+import banner from "~/assets/images/banners/banner1.png"
+</script>
+<style scoped>
+.welcome{
+     font-family: "Black Ops One", sans-serif;
+
+}
+</style>
