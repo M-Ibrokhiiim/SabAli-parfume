@@ -1,30 +1,7 @@
 <template>
-  <div class="bg-black text-white">
-    <!-- HERO -->
-    <section class="h-[65vh] flex items-center justify-center relative">
-
-      <!-- background -->
-       <CommonBackgroundBannerBg
-        :background= "banner"
-       />
-      <!-- content -->
-      <div class="relative text-center px-6 ml-[90px]">
-        <h2 class="welcome text-5xl md:text-7xl font-light tracking-[10px]">
-         SABALI 
-        </h2>
-
-        <PagesHomeExploreButton/> 
-        
-      </div>
-    </section>
-
-    <!-- FEATURES -->
-    <PagesHomeBrandCarousel  />
-
-    <!-- PRODUCTS -->
-    <section id="products" class="px-10 py-24">
+  <section id="products" class="px-10 py-24 bg-black">
       <!-- Designed Toggler suitable to the website of design -->
-      <div id="productToggle" class="-mb-18  bg-black h-[100px] flex  items-center sticky top-0 z-[999]">
+      <div id="productToggle" class="-mb-18  mt-[-70px] bg-black h-[100px] flex  items-center sticky top-0 z-[999]">
         <div class="relative flex border border-white/10 p-1 rounded-full bg-zinc-950 max-w-xs w-full mx-auto select-none">
           <!-- Slide Highlight overlay -->
           <div 
@@ -59,30 +36,17 @@
         <component  :is="activeComponent" />
       </transition>
     </section>
-    
-  </div>
 </template>
-
 <script setup>
-import { ref, computed, onMounted } from 'vue'
-import { useRouter } from 'vue-router'
-import banner from "~/assets/images/banners/banner1.png"
 import PagesProductsMenParfumes from '~/components/pages/products/MenParfumes.vue'
 import PagesProductsWomenParfumes from '~/components/pages/products/WomenParfumes.vue'
 
-const router = useRouter()
-const activeTab = ref('men')
 
-// Computed property to switch component dynamically using Vue's built-in <component :is="...">
+const activeTab = ref('men')
 const activeComponent = computed(() => {
   return activeTab.value === 'men' ? PagesProductsMenParfumes : PagesProductsWomenParfumes
 })
-
-onMounted(() => {
-  router.push('/')
-})
 </script>
-
 <style scoped>
 .welcome{
      font-family: "Black Ops One", sans-serif;

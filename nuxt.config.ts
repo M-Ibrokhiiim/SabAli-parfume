@@ -9,7 +9,7 @@ export default defineNuxtConfig({
         {
           rel: 'icon',
           type: 'image/png',
-          href: '/picn.png'
+          href: '/pic.png'
         },
         {
           rel: 'preconnect',
