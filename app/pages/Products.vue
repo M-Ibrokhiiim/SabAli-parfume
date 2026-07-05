@@ -10,6 +10,7 @@
               width: 'calc(50% - 4px)',
               transform: activeTab === 'men' ? 'translateX(0)' : 'translateX(100%)'
             }"
+            
           ></div>
 
           <!-- Him Button -->

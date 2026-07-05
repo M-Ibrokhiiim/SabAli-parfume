@@ -1,13 +1,14 @@
 <template>
   <section class="py-12 bg-black">
-    <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto px-6">
+    <!-- Grid container with slim responsive padding to maximize mobile width -->
+    <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
       <div 
         v-for="product in products" 
         :key="product.id" 
-        class="group flex flex-col bg-zinc-950/40 border border-white/5 rounded-2xl p-4 transition-all duration-500 hover:border-white/10 hover:bg-zinc-950/60"
+        class="group flex flex-col bg-zinc-950/40 border border-white/10 rounded-2xl p-4 mb-8 sm:mb-0 transition-all duration-500 hover:border-white/25 hover:bg-zinc-950/60"
       >
-        <!-- Interactive Image Carousel -->
-        <div class="relative h-[280px] w-full overflow-hidden rounded-xl select-none group">
+        <!-- Interactive Image Carousel (Luxurious portrait h-[360px] on mobile, compact h-[280px] on desktop) -->
+        <div class="relative h-[360px] sm:h-[280px] w-full overflow-hidden rounded-xl select-none group">
           
           <!-- DESKTOP MODE: Original Absolute Stack with Elegant Cross-Fade -->
           <template v-if="isDesktop">
