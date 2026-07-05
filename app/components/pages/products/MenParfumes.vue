@@ -1,6 +1,6 @@
 <template>
-  <section class="py-12 bg-black">
-    <div class="grid md:grid-cols-3 lg:grid-cols-3 gap-12 max-w-8xl mx-auto px-6">
+  <section class="py-12 bg-black ">
+    <div class="grid md:grid-cols-3 lg:grid-cols-3 gap-20 max-w-8xl mx-auto px-6">
       <div 
         v-for="product in products" 
         :key="product.id" 
@@ -125,6 +125,39 @@ const products = ref([
     currentImageIndex: 0,
     images: [
       'https://creedboutique.com/cdn/shop/files/PDP-Image-Carousel-Aventus-100ml-1x1_1_1.jpg?v=1779369552&width=720',
+      'https://creedboutique.com/cdn/shop/files/3x10ml-aventus_1.jpg?v=1694527010&width=720'
+    ]
+  },
+  {
+    id: 4,
+    name: 'AMBER NOIR',
+    description: 'A warm, bold fusion of dark patchouli, creamy Madagascar vanilla, and spicy black pepper. Exudes absolute luxury and sophisticated masculine charm.',
+    price: '$195',
+    currentImageIndex: 0,
+    images: [
+      'https://i.pinimg.com/736x/71/25/32/71253292c5d8b73520d5cf52becea5c9.jpg',
+      'https://creedboutique.com/cdn/shop/files/3x10ml-aventus_1.jpg?v=1694527010&width=720'
+    ]
+  },
+  {
+    id: 5,
+    name: 'AMBER NOIR',
+    description: 'A warm, bold fusion of dark patchouli, creamy Madagascar vanilla, and spicy black pepper. Exudes absolute luxury and sophisticated masculine charm.',
+    price: '$195',
+    currentImageIndex: 0,
+    images: [
+      'https://i.pinimg.com/736x/ae/e5/9b/aee59b2b151a33b6be8463147847eb6c.jpg',
+      'https://creedboutique.com/cdn/shop/files/3x10ml-aventus_1.jpg?v=1694527010&width=720'
+    ]
+  },
+  {
+    id: 6,
+    name: 'AMBER NOIR',
+    description: 'A warm, bold fusion of dark patchouli, creamy Madagascar vanilla, and spicy black pepper. Exudes absolute luxury and sophisticated masculine charm.',
+    price: '$195',
+    currentImageIndex: 0,
+    images: [
+      'https://i.pinimg.com/736x/46/8b/2e/468b2e810e5d711ab8e9be455b9cbc23.jpg',
       'https://creedboutique.com/cdn/shop/files/3x10ml-aventus_1.jpg?v=1694527010&width=720'
     ]
   }
