@@ -4,24 +4,17 @@
     <section class="h-[65vh] flex items-center justify-center relative">
 
       <!-- background -->
-      <div class="absolute inset-2 overflow-hidden">
-        <img
-          :src="banner"
-          class="w-full h-full object-cover mt-[] ml-[-70px]"
-        />
-      </div>
-
+       <CommonBackgroundBannerBg
+        :background= "banner"
+       />
       <!-- content -->
       <div class="relative text-center px-6 ml-[90px]">
         <h2 class="welcome text-5xl md:text-7xl font-light tracking-[10px]">
          SABALI 
         </h2>
 
-       
-
-        <button class="mt-10 px-8 py-3 border border-white/40 hover:bg-white hover:text-black transition">
-          Explore Collection
-        </button>
+        <PagesHomeButtonsExplore/> 
+        
       </div>
     </section>
 
@@ -79,24 +72,30 @@
             />
           </div>
           <h3 class="mt-4 text-lg">Velvet Rose</h3>
-          <p class="text-white/60 text-sm">Soft floral elegance</p>
+          <p class="text-white/60 text-sm">Soft floral elegance</p> 
         </div>
-
+              <div>Ibrokhiim Muysinov Bugundan Softwarre Engineer</div>
         <div class="group">
           <div class="overflow-hidden">
             <img
               src="https://i.ebayimg.com/images/g/2tQAAOSwx29lg04a/s-l1200.jpg"
               class="h-[400px] w-full object-cover group-hover:scale-105 transition duration-500"
             />
-          </div>
+          </div>MB.  <div><H1>hELLO bROTTHER yOJ AND me today go to play footbal !
+            
+          </H1></div>
           <h3 class="mt-4 text-lg">Amber Noir</h3>
           <p class="text-white/60 text-sm">Warm and bold aroma</p>
         </div>
+ <div>
 
+ </div>
       </div>
     </section>
 
-
+   <div>
+    <h1>Hello brothers You need to tell me about How to do it for running page </h1> This is funny Burdaym Bud you need to eubn 
+   </div>
   </div>
 </template>
 <script setup>
