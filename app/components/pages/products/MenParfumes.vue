@@ -7,7 +7,7 @@
         class="group flex flex-col bg-zinc-950/40 border border-white/5 rounded-2xl p-4 transition-all duration-500 hover:border-white/10 hover:bg-zinc-950/60"
       >
         <!-- Interactive Image Carousel -->
-        <div class="relative h-[450px] w-full overflow-hidden rounded-xl select-none group">
+        <div class="relative h-[280px] w-full overflow-hidden rounded-xl select-none group">
           
           <!-- Product Images with elegant cross-fade transition -->
           <div 
@@ -124,8 +124,8 @@ const products = ref([
     price: '$195',
     currentImageIndex: 0,
     images: [
-      'https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=800&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1523293182086-7651a899d37f?q=80&w=800&auto=format&fit=crop'
+      'https://creedboutique.com/cdn/shop/files/PDP-Image-Carousel-Aventus-100ml-1x1_1_1.jpg?v=1779369552&width=720',
+      'https://creedboutique.com/cdn/shop/files/3x10ml-aventus_1.jpg?v=1694527010&width=720'
     ]
   }
 ])

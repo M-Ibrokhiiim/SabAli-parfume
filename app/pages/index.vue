@@ -27,7 +27,10 @@
       <h2 class="text-3xl tracking-[6px] text-center mb-16">
         Barcha mahsulotlar
       </h2>
-      <PagesProductsMenParfumes/>
+      <div id="productToggle">
+         
+      </div>
+      <PagesProductsWomenParfumes/>
     </section>
     
   </div>
