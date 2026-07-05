@@ -19,30 +19,7 @@
     </section>
 
     <!-- FEATURES -->
-    <section class="py-24 px-10 grid md:grid-cols-3 gap-10 text-center border-t border-white/10">
-
-      <div>
-        <h3 class="text-xl tracking-[4px]">SIGNATURE</h3>
-        <p class="mt-4 text-white/60 text-sm">
-          Unique perfumes designed with rare ingredients from around the world.
-        </p>
-      </div>
-
-      <div>
-        <h3 class="text-xl tracking-[4px]">LUXURY</h3>
-        <p class="mt-4 text-white/60 text-sm">
-          Minimal packaging with refined aesthetics and premium design.
-        </p>
-      </div>
-
-      <div>
-        <h3 class="text-xl tracking-[4px]">LIMITED</h3>
-        <p class="mt-4 text-white/60 text-sm">
-          Exclusive drops available in limited quantities only.
-        </p>
-      </div>
-
-    </section>
+    <PagesHomeBrandCarousel />
 
     <!-- PRODUCTS -->
     <section class="px-10 py-24 border-t border-white/10">
