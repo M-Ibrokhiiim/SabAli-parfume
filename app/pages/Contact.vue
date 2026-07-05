@@ -239,7 +239,7 @@
             <span class="text-[10px] font-mono tracking-widest text-white/30 uppercase">III-Kashfiyot</span>
             <h3 class="text-lg font-light tracking-widest text-white uppercase">
               Atelye masterklassi
-              
+
             </h3>
             <p class="text-xs font-light text-white/50 leading-relaxed">
               Noyob va hashamatli atirlarning yaratilish kimyosi, o‘simliklar terimi va ifor yig‘ish formulalarini o‘rganuvchi kichik guruh (4 kishigacha) uchun shaxsiy masterklass.

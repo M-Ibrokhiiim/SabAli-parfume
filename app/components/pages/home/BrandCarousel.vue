@@ -14,7 +14,7 @@
           <div 
             v-for="(brand, index) in brands" 
             :key="`track1-${index}`" 
-            class="brand-item group flex items-center gap-6 px-16 sm:px-20 md:px-24 cursor-pointer"
+            class="brand-item group flex items-center gap-6 px-8 sm:px-12 md:px-16 lg:px-20 cursor-pointer"
           >
             <!-- SVG Brand Logo -->
             <div class="h-11 sm:h-14 md:h-16 w-auto flex items-center justify-center text-white/30 group-hover:text-white transition-colors duration-300">
@@ -165,7 +165,7 @@
           <div 
             v-for="(brand, index) in brands" 
             :key="`track2-${index}`" 
-            class="brand-item group flex items-center gap-6 px-16 sm:px-20 md:px-24 cursor-pointer"
+            class="brand-item group flex items-center gap-6 px-8 sm:px-12 md:px-16 lg:px-20 cursor-pointer"
           >
             <!-- SVG Brand Logo -->
             <div class="h-11 sm:h-14 md:h-16 w-auto flex items-center justify-center text-white/30 group-hover:text-white transition-colors duration-300">
