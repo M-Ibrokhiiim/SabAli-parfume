@@ -22,7 +22,7 @@
     <PagesHomeBrandCarousel />
 
     <!-- PRODUCTS -->
-    <section class="px-10 py-24 border-t border-white/10">
+    <section class="px-10 py-24  mt-[5vh]">
 
       <h2 class="text-3xl tracking-[6px] text-center mb-16">
         FEATURED COLLECTION
@@ -51,16 +51,13 @@
           <h3 class="mt-4 text-lg">Velvet Rose</h3>
           <p class="text-white/60 text-sm">Soft floral elegance</p> 
         </div>
-              <div>Ibrokhiim Muysinov Bugundan Softwarre Engineer</div>
         <div class="group">
           <div class="overflow-hidden">
             <img
               src="https://i.ebayimg.com/images/g/2tQAAOSwx29lg04a/s-l1200.jpg"
               class="h-[400px] w-full object-cover group-hover:scale-105 transition duration-500"
             />
-          </div>MB.  <div><H1>hELLO bROTTHER yOJ AND me today go to play footbal !
-            
-          </H1></div>
+          </div> 
           <h3 class="mt-4 text-lg">Amber Noir</h3>
           <p class="text-white/60 text-sm">Warm and bold aroma</p>
         </div>
@@ -69,10 +66,7 @@
  </div>
       </div>
     </section>
-
-   <div>
-    <h1>Hello brothers You need to tell me about How to do it for running page </h1> This is funny Burdaym Bud you need to eubn 
-   </div>
+    
   </div>
 </template>
 <script setup>
