@@ -1,6 +1,6 @@
 <template>
      <header class="flex items-center  bg-black justify-between px-10 py-6 border-b border-white/10">
-      <h1 class="text-xl tracking-[6px] font-light text-white">NOIR</h1>
+      <h1 class="text-xl tracking-[6px] font-light text-white">ALI</h1>
 
       <nav class="hidden md:flex gap-10 text-sm text-white/70">
         <NuxtLink href="/" class="hover:text-white transition">Home</NuxtLink>
