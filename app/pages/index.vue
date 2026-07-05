@@ -22,7 +22,7 @@
     <PagesHomeBrandCarousel  />
 
     <!-- PRODUCTS -->
-    <section class="px-10 py-24  mt-[5vh]">
+    <section id="products" class="px-10 py-24 mt-[1vw] ">
 
       <h2 class="text-3xl tracking-[6px] text-center mb-16">
         FEATURED COLLECTION
@@ -70,7 +70,12 @@
   </div>
 </template>
 <script setup>
+const router  = useRouter()
 import banner from "~/assets/images/banners/banner1.png"
+
+onMounted(()=> {
+router.push('/')
+})
 </script>
 <style scoped>
 .welcome{
