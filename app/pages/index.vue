@@ -13,13 +13,13 @@
          SABALI 
         </h2>
 
-        <PagesHomeButtonsExplore/> 
+        <PagesHomeExploreButton/> 
         
       </div>
     </section>
 
     <!-- FEATURES -->
-    <PagesHomeBrandCarousel />
+    <PagesHomeBrandCarousel  />
 
     <!-- PRODUCTS -->
     <section class="px-10 py-24  mt-[5vh]">

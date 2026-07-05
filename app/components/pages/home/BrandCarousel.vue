@@ -1,11 +1,6 @@
 <template>
-  <section class="bg-black  mt-[20px]  items-center overflow-hidden">
-    <!-- Section Title -->
-    <div class="px-10 mb-10 text-center">
-      <h2 class="text-xs uppercase tracking-[0.4em] text-white/40 font-light">
-      </h2>
-    </div>
-
+  <section 
+     class="py-16  cursor-pointer mt-[20px] bg-black overflow-hidden">
     <!-- Marquee Container -->
     <div class="marquee-container relative w-full overflow-hidden py-4 select-none">
       <!-- Luxurious gradient shadow fade overlays on the sides -->
@@ -13,7 +8,7 @@
       <div class="pointer-events-none absolute inset-y-0 right-0 w-20 sm:w-32 md:w-48 bg-gradient-to-l from-black via-black/80 to-transparent z-10"></div>
 
       <!-- Marquee Tracks -->
-      <div class="flex flex-row flex-nowrap w-full overflow-hidden">
+      <div @click="navigateTo('/collections')" class="flex flex-row flex-nowrap w-full overflow-hidden">
         <!-- First Track -->
         <div class="marquee-track flex flex-row flex-nowrap shrink-0 items-center animate-marquee">
           <div 
@@ -22,7 +17,7 @@
             class="brand-item group flex items-center gap-6 px-16 sm:px-20 md:px-24 cursor-pointer"
           >
             <!-- SVG Brand Logo -->
-            <div class="h-11 sm:h-14 md:h-16 w-auto flex items-center justify-center text-white/30 group-hover:text-white transition-all duration-300 transform group-hover:scale-110">
+            <div class="h-11 sm:h-14 md:h-16 w-auto flex items-center justify-center text-white/30 group-hover:text-white transition-colors duration-300">
               <!-- Chanel -->
               <svg 
                 v-if="brand.id === 'chanel'" 
@@ -173,7 +168,7 @@
             class="brand-item group flex items-center gap-6 px-16 sm:px-20 md:px-24 cursor-pointer"
           >
             <!-- SVG Brand Logo -->
-            <div class="h-11 sm:h-14 md:h-16 w-auto flex items-center justify-center text-white/30 group-hover:text-white transition-all duration-300 transform group-hover:scale-110">
+            <div class="h-11 sm:h-14 md:h-16 w-auto flex items-center justify-center text-white/30 group-hover:text-white transition-colors duration-300">
               <!-- Chanel -->
               <svg 
                 v-if="brand.id === 'chanel'" 
@@ -386,11 +381,6 @@ const brands = [
 }
 
 .animate-marquee {
-  animation: marquee 70s linear infinite;
-}
-
-/* Pause the animation when container is hovered */
-.marquee-container:hover .animate-marquee {
-  animation-play-state: paused;
+  animation: marquee 55s linear infinite;
 }
 </style>
