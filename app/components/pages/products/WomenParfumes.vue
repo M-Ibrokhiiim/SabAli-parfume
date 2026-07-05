@@ -123,8 +123,8 @@ const products = ref([
     price: '$210',
     currentImageIndex: 0,
     images: [
-      'https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?q=80&w=800&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=800&auto=format&fit=crop'
+      'https://i.pinimg.com/736x/ed/e9/13/ede9137faf4c0b6e31259a313110f552.jpg',
+      'https://i.pinimg.com/736x/41/4f/9c/414f9c366edd0ec2b6a081617f4a3ca2.jpg'
     ]
   }
 ])
