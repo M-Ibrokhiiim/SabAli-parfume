@@ -1,61 +1,28 @@
 <template>
   <div class="bg-black text-white">
-
     <!-- HERO -->
-    <section class="h-[40vh] flex items-center justify-center relative">
+    <section class="h-[65vh] flex items-center justify-center relative">
 
       <!-- background -->
-      <div class="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1594035910387-fea47794261f"
-          class="w-full h-full object-cover opacity-40"
-        />
-      </div>
-
+       <CommonBackgroundBannerBg
+        :background= "banner"
+       />
       <!-- content -->
-      <div class="relative text-center px-6">
-        <h2 class="text-5xl md:text-7xl font-light tracking-[10px]">
-         SAB ALI 
+      <div class="relative text-center px-6 ml-[90px]">
+        <h2 class="welcome text-5xl md:text-7xl font-light tracking-[10px]">
+         SABALI 
         </h2>
 
-        <p class="mt-6 text-white/70 max-w-xl mx-auto">
-          Discover exclusive fragrances crafted for timeless elegance and modern identity.
-        </p>
-
-        <button class="mt-10 px-8 py-3 border border-white/40 hover:bg-white hover:text-black transition">
-          Explore Collection
-        </button>
+        <PagesHomeExploreButton/> 
+        
       </div>
     </section>
 
     <!-- FEATURES -->
-    <section class="py-24 px-10 grid md:grid-cols-3 gap-10 text-center border-t border-white/10">
-
-      <div>
-        <h3 class="text-xl tracking-[4px]">SIGNATURE</h3>
-        <p class="mt-4 text-white/60 text-sm">
-          Unique perfumes designed with rare ingredients from around the world.
-        </p>
-      </div>
-
-      <div>
-        <h3 class="text-xl tracking-[4px]">LUXURY</h3>
-        <p class="mt-4 text-white/60 text-sm">
-          Minimal packaging with refined aesthetics and premium design.
-        </p>
-      </div>
-
-      <div>
-        <h3 class="text-xl tracking-[4px]">LIMITED</h3>
-        <p class="mt-4 text-white/60 text-sm">
-          Exclusive drops available in limited quantities only.
-        </p>
-      </div>
-
-    </section>
+    <PagesHomeBrandCarousel  />
 
     <!-- PRODUCTS -->
-    <section class="px-10 py-24 border-t border-white/10">
+    <section class="px-10 py-24  mt-[5vh]">
 
       <h2 class="text-3xl tracking-[6px] text-center mb-16">
         FEATURED COLLECTION
@@ -82,23 +49,32 @@
             />
           </div>
           <h3 class="mt-4 text-lg">Velvet Rose</h3>
-          <p class="text-white/60 text-sm">Soft floral elegance</p>
+          <p class="text-white/60 text-sm">Soft floral elegance</p> 
         </div>
-
         <div class="group">
           <div class="overflow-hidden">
             <img
               src="https://i.ebayimg.com/images/g/2tQAAOSwx29lg04a/s-l1200.jpg"
               class="h-[400px] w-full object-cover group-hover:scale-105 transition duration-500"
             />
-          </div>
+          </div> 
           <h3 class="mt-4 text-lg">Amber Noir</h3>
           <p class="text-white/60 text-sm">Warm and bold aroma</p>
         </div>
+ <div>
 
+ </div>
       </div>
     </section>
-
-
+    
   </div>
 </template>
+<script setup>
+import banner from "~/assets/images/banners/banner1.png"
+</script>
+<style scoped>
+.welcome{
+     font-family: "Black Ops One", sans-serif;
+
+}
+</style>
