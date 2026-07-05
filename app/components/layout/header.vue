@@ -51,7 +51,7 @@
             Bosh sahifa
           </NuxtLink>
           <NuxtLink 
-            to="/#products" 
+            to="/products" 
             @click="isMobileMenuOpen = false" 
             class="text-lg uppercase tracking-[0.3em] font-light text-white/70 hover:text-white transition-colors duration-300"
           >

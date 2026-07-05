@@ -1,10 +1,10 @@
 <template>
   <section class="py-12 bg-black">
-    <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto px-3 sm:px-6">
       <div 
         v-for="product in products" 
         :key="product.id" 
-        class="group flex flex-col bg-zinc-950/40 border border-white/5 rounded-2xl p-4 transition-all duration-500 hover:border-white/10 hover:bg-zinc-950/60"
+        class="group flex flex-col bg-zinc-950/40 border border-white/5 rounded-2xl p-3 sm:p-4 transition-all duration-500 hover:border-white/10 hover:bg-zinc-950/60"
       >
         <!-- Interactive Image Carousel -->
         <div class="relative h-[280px] w-full overflow-hidden rounded-xl select-none group">

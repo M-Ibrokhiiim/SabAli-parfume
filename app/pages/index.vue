@@ -25,7 +25,7 @@
     <section id="products" class="px-6 sm:px-10 py-24 mt-[1vw]">
 
       <!-- Designed Toggler suitable to the website of design -->
-      <div id="productToggle" class="mb-16">
+      <div id="productToggle" class="mb-16 sticky top-0 z-30 bg-black/90 backdrop-blur-md py-4">
         <div class="relative flex border border-white/10 p-1 rounded-full bg-zinc-950 max-w-xs w-full mx-auto select-none">
           <!-- Slide Highlight overlay -->
           <div 
