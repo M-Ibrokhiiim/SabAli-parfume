@@ -1,6 +1,9 @@
 <template>
   <section 
-     class="py-16  cursor-pointer mt-[1px] bg-black overflow-hidden">
+     :class="[
+      'py-16  cursor-pointer  bg-black overflow-hidden',
+      isMobile ? 'mt-[30px]' : 'mt-[1px]'
+      ]">
     <!-- Marquee Container -->
     <div class="marquee-container relative w-full overflow-hidden py-4 select-none">
       <!-- Luxurious gradient shadow fade overlays on the sides -->

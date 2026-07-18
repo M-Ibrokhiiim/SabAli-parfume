@@ -2,10 +2,11 @@
     <div class="absolute  flex justify-center inset-2 overflow-hidden">
         <img
            :src="background"
-          :class="[
+           :class="[
             'w-full h-full',
-            isMobile ? '' : 'ml-[-300px]'
+            isMobile ? 'border-none' : 'ml-[-100px] border-none'
             ]"
+            alt="a"
         />
       </div>
 </template>

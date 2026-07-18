@@ -13,16 +13,16 @@
         :isMobile = 'isMobile'
        />
       <!-- content -->
-      <div class="relative text-center px-6 mx-auto max-w-xl">
+      <div :class="[
+        'relative text-center px-6 mx-auto max-w-xl ',
+        isMobile ? 'mt-[30px]' : 'ml-[40vw]' 
+      ]">
         <h2 :class="[
           'welcome text-5xl md:text-7xl font-light tracking-[10px] select-none',
-          isMobile ? 'mt-[50px]' : ''
           ]">
          SABALI 
         </h2>
-
         <PagesHomeExploreButton/> 
-        
       </div>
     </section>
 
@@ -32,7 +32,8 @@
       />
 
     <!-- PRODUCTS -->
-    <section id="products" class="px-6 sm:px-10 py-24 mt-[1vw]">
+     <p id="products"></p>
+    <section  class="px-6 sm:px-10 py-24 mt-[1vw]">
 
       <!-- Designed Toggler suitable to the website of design -->
       <div id="productToggle" class="mb-16 sticky top-0 z-30 bg-black/90 backdrop-blur-md py-4">
@@ -70,6 +71,19 @@
       <transition name="fade-slide" mode="out-in">
         <component :is="activeComponent" />
       </transition>
+
+      <!-- Barchasi (All) Button -->
+      <div :class="[
+        'mt-12 flex justify-center',
+        isMobile ? 'mt-[-200px]': ''
+      ]">
+        <button 
+          @click="router.push('/products')"
+          class="px-10 py-3 border border-white/20 mt-[-50px] rounded-[10px] hover:bg-white hover:text-black transition uppercase tracking-[0.25em] text-xs font-semibold"
+        >
+          barchasi
+        </button>
+      </div>
     </section>
     
   </div>
@@ -86,7 +100,7 @@ import PagesProductsWomenParfumes from '~/components/pages/products/WomenParfume
 const router = useRouter()
 const activeTab = ref('men')
 
-const bg = ref(banner)
+const bg = ref(null)
 const isMobile = ref(false)
 
 // Computed property to switch component dynamically using Vue's built-in <component :is="...">
