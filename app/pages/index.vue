@@ -1,7 +1,11 @@
 <template>
   <div class="bg-black text-white">
     <!-- HERO -->
-    <section class="h-[65vh] flex items-center justify-center relative overflow-hidden">
+    <section :class="[
+      'flex items-center justify-center relative overflow-hidden',
+      isMobile ? 'h-[53vh]' : 'h-[65vh]'
+
+    ]">
 
       <!-- background -->
        <CommonBackgroundBannerBg
@@ -66,7 +70,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
 import banner from "~/assets/images/banners/banner1.png"
 import mobileBanner from "~/assets/images/mobile-banner/2.jpg"
@@ -84,11 +88,23 @@ const activeComponent = computed(() => {
   return activeTab.value === 'men' ? PagesProductsMenParfumes : PagesProductsWomenParfumes
 })
 
-onMounted(() => {
-  if(isMobile.value) {
+const checkIfMobile = () => {
+  isMobile.value = window.innerWidth < 768 || /Mobi|Android|iPhone/i.test(navigator.userAgent)
+  if (isMobile.value) {
     bg.value = mobileBanner
+  } else {
+    bg.value = banner
   }
+}
+
+onMounted(() => {
+  checkIfMobile()
+  window.addEventListener('resize', checkIfMobile)
   router.push('/')
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', checkIfMobile)
 })
 </script>
 

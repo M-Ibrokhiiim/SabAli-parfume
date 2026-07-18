@@ -10,10 +10,24 @@
       </div>
 </template>
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue'
+
 const isMobile = ref(false)
 
 defineProps({
     background: String 
 })
- 
+
+const checkIfMobile = () => {
+  isMobile.value = window.innerWidth < 768 || /Mobi|Android|iPhone/i.test(navigator.userAgent)
+}
+
+onMounted(() => {
+  checkIfMobile()
+  window.addEventListener('resize', checkIfMobile)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', checkIfMobile)
+})
 </script>
