@@ -3,17 +3,21 @@
     <!-- HERO -->
     <section :class="[
       'flex items-center justify-center relative overflow-hidden',
-      isMobile ? 'h-[53vh]' : 'h-[65vh]'
+      isMobile ? 'h-[53vh]' : 'h-[70vh]'
 
     ]">
 
       <!-- background -->
        <CommonBackgroundBannerBg
         :background= "bg"
+        :isMobile = 'isMobile'
        />
       <!-- content -->
       <div class="relative text-center px-6 mx-auto max-w-xl">
-        <h2 class="welcome text-5xl md:text-7xl font-light tracking-[10px] select-none">
+        <h2 :class="[
+          'welcome text-5xl md:text-7xl font-light tracking-[10px] select-none',
+          isMobile ? 'mt-[50px]' : ''
+          ]">
          SABALI 
         </h2>
 
@@ -23,7 +27,9 @@
     </section>
 
     <!-- FEATURES -->
-    <PagesHomeBrandCarousel  />
+    <PagesHomeBrandCarousel
+      :isMobile = 'isMobile'
+      />
 
     <!-- PRODUCTS -->
     <section id="products" class="px-6 sm:px-10 py-24 mt-[1vw]">
