@@ -2,7 +2,7 @@
   <section 
      :class="[
       'py-16  cursor-pointer  bg-black overflow-hidden',
-      isMobile ? 'mt-[30px]' : 'mt-[1px]'
+      isMobile ? 'mt-[30px]' : 'mt-[-20px]'
       ]">
     <!-- Marquee Container -->
     <div class="marquee-container relative w-full overflow-hidden py-4 select-none">

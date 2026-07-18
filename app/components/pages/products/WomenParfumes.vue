@@ -98,8 +98,9 @@
               {{ product.price }}
             </span>
           </div>
+          <!-- Product description using dynamic i18n key -->
           <p class="mt-2 text-white/50 text-sm font-light leading-relaxed flex-grow">
-            {{ product.description }}
+            {{ $t(product.descKey) }}
           </p>
 
           <a 
@@ -108,7 +109,7 @@
             class="mt-6 block w-full"
           >
             <button class="w-full py-3 bg-white text-black text-xs uppercase tracking-[0.25em] font-medium hover:bg-zinc-200 transition duration-300 select-none">
-              Xarid
+              {{ $t('products.purchase') }}
             </button>
           </a>
         </div>
@@ -151,7 +152,7 @@ const products = ref([
   {
     id: 1,
     name: 'VELVET ROSE',
-    description: 'A delicate, romantic fusion of fresh blooming Damask roses, powdery white musk, and sweet warm vanilla. Exudes absolute grace, softness, and timeless luxury.',
+    descKey: 'products.velvet_rose',
     price: '$190',
     currentImageIndex: 0,
     images: [
@@ -162,7 +163,7 @@ const products = ref([
   {
     id: 2,
     name: 'JASMINE IMPÉRIAL',
-    description: 'An enchanting, radiant blend of white Sambac jasmine petals, bright Italian neroli, and sun-kissed solar amber. A scent capturing pure warmth, modern elegance, and light.',
+    descKey: 'products.jasmine_imperial',
     price: '$210',
     currentImageIndex: 0,
     images: [
@@ -173,7 +174,7 @@ const products = ref([
   {
     id: 3,
     name: 'JASMINE IMPÉRIAL',
-    description: 'An enchanting, radiant blend of white Sambac jasmine petals, bright Italian neroli, and sun-kissed solar amber. A scent capturing pure warmth, modern elegance, and light.',
+    descKey: 'products.jasmine_imperial',
     price: '$210',
     currentImageIndex: 0,
     images: [

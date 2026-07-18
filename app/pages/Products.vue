@@ -19,7 +19,7 @@
             class="relative z-10 flex-1 py-3 text-xs uppercase tracking-[0.25em] font-medium rounded-full text-center transition-colors duration-500"
             :class="activeTab === 'men' ? 'text-black' : 'text-white/50 hover:text-white'"
           >
-            Men
+            {{ $t('home.tab_men') }}
           </button>
 
           <!-- Her Button -->
@@ -28,7 +28,7 @@
             class="relative z-10 flex-1 py-3 text-xs uppercase tracking-[0.25em] font-medium rounded-full text-center transition-colors duration-500"
             :class="activeTab === 'women' ? 'text-black' : 'text-white/50 hover:text-white'"
           >
-            Women
+            {{ $t('home.tab_women') }}
           </button>
         </div>
       </div>
@@ -36,7 +36,7 @@
       <transition name="fade-slide" mode="out-in" >
         <component  :is="activeComponent" />
       </transition>
-    </section>
+  </section>
 </template>
 <script setup>
 import PagesProductsMenParfumes from '~/components/pages/products/MenParfumes.vue'

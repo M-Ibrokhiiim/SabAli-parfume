@@ -4,7 +4,6 @@
     <section :class="[
       'flex items-center justify-center relative overflow-hidden',
       isMobile ? 'h-[53vh]' : 'h-[70vh]'
-
     ]">
 
       <!-- background -->
@@ -32,7 +31,6 @@
       />
 
     <!-- PRODUCTS -->
-     <p id="products"></p>
     <section  class="px-6 sm:px-10 py-24 mt-[1vw]">
 
       <!-- Designed Toggler suitable to the website of design -->
@@ -53,7 +51,7 @@
             class="relative z-10 flex-1 py-3 text-xs uppercase tracking-[0.25em] font-medium rounded-full text-center transition-colors duration-500"
             :class="activeTab === 'men' ? 'text-black' : 'text-white/50 hover:text-white'"
           >
-            Men
+            {{ $t('home.tab_men') }}
           </button>
 
           <!-- Her Button -->
@@ -62,7 +60,7 @@
             class="relative z-10 flex-1 py-3 text-xs uppercase tracking-[0.25em] font-medium rounded-full text-center transition-colors duration-500"
             :class="activeTab === 'women' ? 'text-black' : 'text-white/50 hover:text-white'"
           >
-            Women
+            {{ $t('home.tab_women') }}
           </button>
         </div>
       </div>
@@ -79,9 +77,12 @@
       ]">
         <button 
           @click="router.push('/products')"
-          class="px-10 py-3 border border-white/20 mt-[-50px] rounded-[10px] hover:bg-white hover:text-black transition uppercase tracking-[0.25em] text-xs font-semibold"
+          :class="[
+            'px-10 py-3 border border-white/20  z-[999] rounded-[10px] hover:bg-white hover:text-black transition uppercase tracking-[0.25em] text-xs font-semibold',
+            isMobile ? 'mt-[160px]' : 'mt-[10px]'
+          ]"
         >
-          barchasi
+          {{ $t('home.barchasi') }}
         </button>
       </div>
     </section>
