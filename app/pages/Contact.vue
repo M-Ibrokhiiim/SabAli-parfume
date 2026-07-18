@@ -5,7 +5,7 @@
     <section class="h-[50vh] flex items-center justify-center relative select-none">
       <div class="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=1600&auto=format&fit=crop"
+          :src="bg"
           class="w-full h-full object-cover opacity-40 filter contrast-125 transition-all duration-1000 transform hover:scale-105"
           alt="SabAli Contact Header Background"
         />
@@ -255,7 +255,7 @@
 
 <script setup>
 import { ref } from 'vue'
-
+import bg from '~/assets/images/mobile-banner/13.jpg'
 const isSubmitting = ref(false)
 const submitStatus = ref(null)
 

@@ -5,7 +5,7 @@
 
       <!-- background -->
        <CommonBackgroundBannerBg
-        :background= "banner"
+        :background= "bg"
        />
       <!-- content -->
       <div class="relative text-center px-6 mx-auto max-w-xl">
@@ -69,11 +69,15 @@
 import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import banner from "~/assets/images/banners/banner1.png"
+import mobileBanner from "~/assets/images/mobile-banner/2.jpg"
 import PagesProductsMenParfumes from '~/components/pages/products/MenParfumes.vue'
 import PagesProductsWomenParfumes from '~/components/pages/products/WomenParfumes.vue'
 
 const router = useRouter()
 const activeTab = ref('men')
+
+const bg = ref(banner)
+const isMobile = ref(false)
 
 // Computed property to switch component dynamically using Vue's built-in <component :is="...">
 const activeComponent = computed(() => {
@@ -81,6 +85,9 @@ const activeComponent = computed(() => {
 })
 
 onMounted(() => {
+  if(isMobile.value) {
+    bg.value = mobileBanner
+  }
   router.push('/')
 })
 </script>
