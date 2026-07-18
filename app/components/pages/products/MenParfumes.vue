@@ -98,8 +98,10 @@
               {{ product.price }}
             </span>
           </div>
+
+          <!-- Product description using dynamic i18n key -->
           <p class="mt-2 text-white/50 text-sm font-light leading-relaxed flex-grow">
-            {{ product.description }}
+            {{ $t(product.descKey) }}
           </p>
 
           <a 
@@ -108,7 +110,7 @@
             class="mt-6 block w-full"
           >
             <button class="w-full py-3 bg-white text-black text-xs uppercase tracking-[0.25em] font-medium hover:bg-zinc-200 transition duration-300 select-none">
-              Xarid
+              {{ $t('products.purchase') }}
             </button>
           </a>
         </div>
@@ -151,7 +153,7 @@ const products = ref([
   {
     id: 1,
     name: 'MIDNIGHT OUD',
-    description: 'A deep, mysterious blend of precious agarwood, warm amber resins, and smoky incense. Designed for the elegant and bold modern gentleman.',
+    descKey: 'products.midnight_oud',
     price: '$185',
     currentImageIndex: 0,
     images: [
@@ -162,7 +164,7 @@ const products = ref([
   {
     id: 2,
     name: 'AMBER NOIR',
-    description: 'A warm, bold fusion of dark patchouli, creamy Madagascar vanilla, and spicy black pepper. Exudes absolute luxury and sophisticated masculine charm.',
+    descKey: 'products.amber_noir',
     price: '$195',
     currentImageIndex: 0,
     images: [
@@ -173,7 +175,7 @@ const products = ref([
   {
     id: 3,
     name: 'AMBER NOIR',
-    description: 'A warm, bold fusion of dark patchouli, creamy Madagascar vanilla, and spicy black pepper. Exudes absolute luxury and sophisticated masculine charm.',
+    descKey: 'products.amber_noir',
     price: '$195',
     currentImageIndex: 0,
     images: [
@@ -184,7 +186,7 @@ const products = ref([
   {
     id: 4,
     name: 'AMBER NOIR',
-    description: 'A warm, bold fusion of dark patchouli, creamy Madagascar vanilla, and spicy black pepper. Exudes absolute luxury and sophisticated masculine charm.',
+    descKey: 'products.amber_noir',
     price: '$195',
     currentImageIndex: 0,
     images: [
@@ -195,7 +197,7 @@ const products = ref([
   {
     id: 5,
     name: 'AMBER NOIR',
-    description: 'A warm, bold fusion of dark patchouli, creamy Madagascar vanilla, and spicy black pepper. Exudes absolute luxury and sophisticated masculine charm.',
+    descKey: 'products.amber_noir',
     price: '$195',
     currentImageIndex: 0,
     images: [
@@ -206,7 +208,7 @@ const products = ref([
   {
     id: 6,
     name: 'AMBER NOIR',
-    description: 'A warm, bold fusion of dark patchouli, creamy Madagascar vanilla, and spicy black pepper. Exudes absolute luxury and sophisticated masculine charm.',
+    descKey: 'products.amber_noir',
     price: '$195',
     currentImageIndex: 0,
     images: [

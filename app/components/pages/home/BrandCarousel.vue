@@ -1,6 +1,9 @@
 <template>
   <section 
-     class="py-16  cursor-pointer mt-[20px] bg-black overflow-hidden">
+     :class="[
+      'py-16  cursor-pointer  bg-black overflow-hidden',
+      isMobile ? 'mt-[30px]' : 'mt-[-20px]'
+      ]">
     <!-- Marquee Container -->
     <div class="marquee-container relative w-full overflow-hidden py-4 select-none">
       <!-- Luxurious gradient shadow fade overlays on the sides -->
@@ -316,6 +319,7 @@
 </template>
 
 <script setup>
+import { computed } from 'vue';
 const brands = [
   { 
     id: 'chanel',
@@ -368,6 +372,12 @@ const brands = [
     fontClass: 'font-serif font-black tracking-[0.2em] text-2xl sm:text-3xl' 
   }
 ]
+
+const props = defineProps({
+  isMobile: Boolean
+})
+
+const duration = computed(() => props.isMobile ? '40s' : '50s')
 </script>
 
 <style scoped>
@@ -381,6 +391,6 @@ const brands = [
 }
 
 .animate-marquee {
-  animation: marquee 55s linear infinite;
+  animation: marquee v-bind(duration) linear infinite;
 }
 </style>
