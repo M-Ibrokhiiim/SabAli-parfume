@@ -8,7 +8,7 @@
       <div class="pointer-events-none absolute inset-y-0 right-0 w-20 sm:w-32 md:w-48 bg-gradient-to-l from-black via-black/80 to-transparent z-10"></div>
 
       <!-- Marquee Tracks -->
-      <div @click="navigateTo('/collections')" class="flex flex-row flex-nowrap w-full overflow-hidden">
+      <div @click="navigateTo('/products')" class="flex flex-row flex-nowrap w-full overflow-hidden">
         <!-- First Track -->
         <div class="marquee-track flex flex-row flex-nowrap shrink-0 items-center animate-marquee">
           <div 
